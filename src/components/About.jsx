@@ -9,7 +9,7 @@ function About() {
           Hi, I'm Hammad
         </h1>
       </section>
-      <section id="about" className="max-w-3xl mx-auto px-6 py-16 pb-0">
+      <section id="about" className="max-w-3xl mx-auto px-6 py-16 pb-0 md:ms-73">
         <div className="text-gray-300 jetbrains-mono-regular text-right leading-relaxed ">
           <p>I like to learn things and make stuff</p>
           <p>...or make things and learn stuff? </p>           
@@ -22,7 +22,7 @@ function About() {
         <h3 className="jetbrains-mono-regular text-[24px] font-semibold text-white mt-8 mb-3 uppercase tracking-wide">
           ~SKILLS
         </h3> 
-        <div className="flex flex-wrap gap-2 w-[90vw]">
+        <div className="flex flex-wrap gap-2 w-[90vw] md:w-[90%]">
           {skills.map((skill) => (
             <span
               key={skill}

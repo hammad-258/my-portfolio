@@ -43,18 +43,11 @@ section {
   }
 .mat-short{
   width: 100%;
-    height: 100%;
-    /* blue */
-    /* background-color: #274b6f ; */
-    background-color: #315a46 ;
-    background-image:
-      radial-gradient(circle, rgba(255, 255, 255, 0.4) 0.25px, transparent 1px),
-      linear-gradient(to right, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
-    background-size: 15px 15px, 45px 45px, 45px 45px;
-}
-@theme {
-  --color-primary: #536878;
-  --color-secondary: #eae0c8;
-  --color-textcolor: gray-900;
+  min-height: 100%;
+  background-color: #315a46 ;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.4) 0.25px, transparent 1px),
+    linear-gradient(to right, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+  background-size: 15px 15px, 45px 45px, 45px 45px;
 }
