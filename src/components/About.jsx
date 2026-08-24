@@ -35,7 +35,7 @@ function About() {
       </section>
     </main>
     <div className="w-[40%] m-auto ms-0 mt-20 ">
-    <figure className="bg-white rotate-[4.4deg] p-2 md:p-3 mt-25 md:mt-0 shadow-[10px_10px_0px_0px_rgba(50,50,50,1)] w-34 md:w-64 transition-all duration-300 ease-out hover:rotate-[-3deg] hover:scale-110 hover:shadow-2xl">
+    <figure className="bg-white rotate-[4.4deg] p-2 md:p-3 mt-25 md:mt-0 shadow-[10px_10px_0px_0px_rgba(35,35,35,1)] w-34 md:w-64 transition-all duration-300 ease-out hover:rotate-[-3deg] hover:scale-110 hover:shadow-2xl">
       <img
       onContextMenu={(e) => e.preventDefault()}
       src={profileImg}

@@ -22,7 +22,7 @@ const projects = [
 function ProjectCard({ title, description, tags, link }) {
   return (
     <div
-      className="mat-short shadow-[10px_10px_0px_0px_rgba(50,50,50,1)] block border-8 border-white p-5 hover:rotate-[2deg] transition-all duration-300 ease-out">
+      className="mat-short shadow-[10px_10px_0px_0px_rgba(35,35,35,1)] block border-8 border-white p-5 hover:rotate-[2deg] transition-all duration-300 ease-out">
       <h3 className="font-semibold text-xl roboto-regular text-white mb-2">{title}</h3>
       <div  className="w-[28px]">
         <a href={link} target="_blank"><svg height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
