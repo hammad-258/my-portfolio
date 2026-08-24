@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+.cedarville-cursive-regular {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.jetbrains-mono-regular {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 80px;
+}
+
+.mat {
+    width: 100%;
+    min-height: 100vh;
+    /* blue */
+    /* background-color: #274b6f ; */
+    background-color: #315a46 ;
+    background-image:
+      radial-gradient(circle, rgba(255, 255, 255, 0.4) 0.25px, transparent 1px),
+      linear-gradient(to right, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+    background-size: 15px 15px, 75px 75px, 75px 75px;
+  }
+.mat-short{
+  width: 100%;
+    height: 100%;
+    /* blue */
+    /* background-color: #274b6f ; */
+    background-color: #315a46 ;
+    background-image:
+      radial-gradient(circle, rgba(255, 255, 255, 0.4) 0.25px, transparent 1px),
+      linear-gradient(to right, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+    background-size: 15px 15px, 45px 45px, 45px 45px;
+}
+@theme {
+  --color-primary: #536878;
+  --color-secondary: #eae0c8;
+  --color-textcolor: gray-900;
+}
