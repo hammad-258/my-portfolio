@@ -25,7 +25,7 @@ function Contact() {
         ))}
       </div>
       <div className="pt-5 grid place-items-center">
-        <p className="cedarville-cursive-regular text-[24px] text-yellow-100">made by me using react and tailwind css</p>
+        <p className="cedarville-cursive-regular md:text-[24px] text-yellow-100">made by me using react and tailwind css</p>
       </div>
     </section>
   );
