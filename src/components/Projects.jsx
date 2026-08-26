@@ -22,7 +22,7 @@ const projects = [
 function ProjectCard({ title, description, tags, link }) {
   return (
     <div
-      className="mat-short shadow-[10px_10px_0px_0px_rgba(35,35,35,1)] block border-8 border-white p-5 hover:rotate-[2deg] transition-all duration-300 ease-out">
+      className="mat-short shadow-[5px_5px_0px_0px_rgba(35,35,35,1)] block border-5 border-white p-5">
       <a href={link} target="_blank">
       <h3 className="font-semibold text-xl roboto-regular text-white mb-2">{title}</h3>
       <div  className="w-[28px]">
@@ -32,7 +32,7 @@ function ProjectCard({ title, description, tags, link }) {
       </div>
       </a>
       
-      <p className="text-sm jetbrains-mono-regular text-gray-200 mb-4">{description}</p>
+      <p className="text-sm jetbrains-mono-regular text-gray-200 my-8">{description}</p>
       <div className="flex flex-wrap gap-2">
         {tags.map((tag) => (
           <span

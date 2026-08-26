@@ -6,7 +6,7 @@ const socials = [
 
 function Contact() {
   return (
-    <section id="contact" className="max-w-3xl mx-auto px-6 py-16">
+    <section id="contact" className="max-w-3xl mx-auto px-6 pt-16">
       <h2 className="jetbrains-mono-regular text-[24px] font-semibold text-white mt-8 mb-3 uppercase tracking-wide">~CONTACT</h2>
       <p className="text-gray-200 jetbrains-mono-regular mb-5">
         Want to work together or just say hi? Reach out any time.
@@ -23,6 +23,9 @@ function Contact() {
             {label}
           </a>
         ))}
+      </div>
+      <div className="pt-5 grid place-items-center">
+        <p className="cedarville-cursive-regular text-[24px] text-yellow-100">made by me using react and tailwind css</p>
       </div>
     </section>
   );

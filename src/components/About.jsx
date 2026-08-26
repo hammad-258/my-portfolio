@@ -1,6 +1,6 @@
 import profileImg from '../assets/profile.jpg'
 function About() {
-  const skills = ["JavaScript", "React", "Node.js", "Python", "SQL", "Git", "Flask", "SQLite DB"];
+  const skills = ["Python", "Flask", "JavaScript", "React", "Node.js", "SQL", "Git", "SQLite DB"];
 
   return (<div className="flex w-full ">
     <main className="w-[60%]">
