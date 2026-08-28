@@ -1,37 +1,21 @@
 import profileImg from '../assets/profile.jpg'
 function About() {
-  const skills = ["Python", "Flask", "JavaScript", "React", "Node.js", "SQL", "Git", "SQLite DB"];
-
   return (<div className="flex w-full ">
     <main className="w-[60%]">
       <section className="max-w-3xl mx-auto px-6 pt-24">
-        <h1 className="text-5xl ps-5 md:text-right font-bold text-white jetbrains-mono-regular">
+        <h1 className="text-5xl ps-5 md:text-right font-bold text-yellow-100 cedarville-cursive-regular">
           Hi, I'm Hammad
         </h1>
       </section>
       <section id="about" className="max-w-3xl mx-auto px-6 py-16 pb-0 md:ms-73">
-        <div className="text-gray-300 jetbrains-mono-regular md:text-right leading-relaxed ">
+        <div className="text-gray-300 text-[16px] jetbrains-mono-regular md:text-right leading-relaxed ">
           <p>I like to learn things and make stuff</p>
           <p>...or make things and learn stuff? </p>           
         </div>
-        <div className="pt-5 ps-5">
-          <p className="roboto-regular text-[20px] w-[80vw] md:w-[100%] text-white leading-relaxed">
-           Pre-final year Engineering undergraduate at ZHCET, Aligarh Muslim University.</p>
-        </div>
-
-        <h3 className="jetbrains-mono-regular text-[24px] font-semibold text-white mt-8 mb-3 uppercase tracking-wide">
-          ~SKILLS
-        </h3> 
-        <div className="flex flex-wrap gap-2 w-[90vw] md:w-[90%]">
-          {skills.map((skill) => (
-            <span
-              key={skill}
-              className="inline-block bg-yellow-200 text-neutral-800 px-2 py-1 -rotate-2 shadow-md jetbrains-mono-regular "
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
+    <div className="pt-5 px-2 overflow-auto">
+      <p className="instrument-serif-regular text-[28px] w-[100%] md:w-[100%] text-white leading-relaxed">
+        Pre-final year Engineering undergraduate at ZHCET, Aligarh Muslim University.</p>
+    </div>
       </section>
     </main>
     <div className="w-[40%] m-auto ms-0 mt-20 ">

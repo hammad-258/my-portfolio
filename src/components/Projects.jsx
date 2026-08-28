@@ -6,7 +6,7 @@ const projects = [
     link: "https://github.com/25f3005703/trekking-management-app-v1",
   },
   {
-    title: "Whack-a-mole mini game",
+    title: "Whack-a-mole",
     description: "A minimal whack-a-mole game written in python and using customTkinter module for graphics.",
     tags: ["Python", "customTkinter"],
     link: "https://github.com/hammad-258/whack-a-mole",
@@ -22,22 +22,18 @@ const projects = [
 function ProjectCard({ title, description, tags, link }) {
   return (
     <div
-      className="mat-short shadow-[5px_5px_0px_0px_rgba(35,35,35,1)] block border-5 border-white p-5">
+      className="relative p-6 bg-yellow-100 text-gray-800 rounded-none shadow-[6px_6px_0px_0px_rgba(35,35,35,1)] font-handwriting">
+      <div class="absolute -top-2 left-1/8 transform -translate-x-1/2 w-12 h-4 bg-yellow-400 opacity-60 rotate-[-4deg]"></div>
+
       <a href={link} target="_blank">
-      <h3 className="font-semibold text-xl roboto-regular text-white mb-2">{title}</h3>
-      <div  className="w-[28px]">
-      <svg height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      </a>
-      
-      <p className="text-sm jetbrains-mono-regular text-gray-200 my-8">{description}</p>
+      <h3 className="font-['times-new-roman'] font-bold underline md:no-underline hover:underline text-xl mb-2">{title}</h3>
+      </a>      
+      <p className="text-sm jetbrains-mono-regular py-3 leading-relaxed">{description}</p>
       <div className="flex flex-wrap gap-2">
         {tags.map((tag) => (
           <span
             key={tag}
-            className="inline-block bg-yellow-200 text-neutral-800 px-2 py-1 -rotate-2 shadow-md jetbrains-mono-regular"
+            className="inline-block bg-yellow-200 text-neutral-800 px-2 py-1 -rotate-2 shadow-[3px_3px_0px_0px_rgba(145,145,145,1)] jetbrains-mono-regular"
           >
             {tag}
           </span>
@@ -49,10 +45,10 @@ function ProjectCard({ title, description, tags, link }) {
 
 function Projects() {
   return (
-    <section id="projects" className="max-w-3xl mx-auto px-6 py-16 pb-0">
+    <section id="projects" className="max-w-3xl mx-auto px-6 py-10">
       <h2
-      className="jetbrains-mono-regular text-[24px] font-semibold text-white mt-8 mb-3 uppercase tracking-wide">
-      ~PROJECTS</h2>
+      className="jetbrains-mono-regular text-[28px] font-semibold text-white mt-8 mb-3 uppercase tracking-wide">
+      ~Things I made</h2>
       <div className="grid sm:grid-cols-2 gap-5">
         {projects.map((project) => (
           <ProjectCard key={project.title} {...project} />
